@@ -41,7 +41,7 @@ jobs:
           npm install
 
       - name: Build site
-        run: npm run build  # make sure this creates your dist/build folder
+        run: npm run build:prod-compat  # make sure this creates your dist/build folder
 
       - name: Upload static files as artifact
         id: deployment
