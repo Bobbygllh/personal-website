@@ -12,7 +12,8 @@
     "build:prod-compat": "lwr build --clean --mode prod-compat",
     "start": "lwr start",
     "stage": "yarn build && yarn start",
-    "stage:prod-compat": "yarn build:prod-compat && yarn start"
+    "stage:prod-compat": "yarn build:prod-compat && yarn start",
+    "websiteurl" : "http://localhost:3000/"
   },
   "dependencies": {
     "lwc": "latest",
