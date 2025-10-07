@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "type": "module",
+  "homepage": "https://bobbygllh.github.io/personal-website/.",
   "scripts": {
     "clean": "rimraf node_modules __lwr_cache__ site",
     "dev": "lwr dev",
