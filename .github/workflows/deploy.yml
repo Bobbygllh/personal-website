@@ -50,7 +50,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: site/
+          path: build_outputs_folder/
 
   # Deployment job
   deploy:

@@ -18,19 +18,19 @@
   },
   {
    "source": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1",
-   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-yYGgTcFHyuCqjWWTmIZA2AsPgaejuCNyYw0UjYCiL0E/bundle_example_app.js"
+   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-YUqwCVKO4PvL-gm0_-_NcEMvMgQyui6txI4xtKnKKNY/bundle_example_app.js"
   },
   {
    "source": "/1/bundle/esm/l/en-US/bi/0/module/mi/example%2Fapp%2Fv%2F0_0_1",
-   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-yYGgTcFHyuCqjWWTmIZA2AsPgaejuCNyYw0UjYCiL0E/bundle_example_app.js"
+   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-YUqwCVKO4PvL-gm0_-_NcEMvMgQyui6txI4xtKnKKNY/bundle_example_app.js"
   },
   {
    "source": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app",
-   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-yYGgTcFHyuCqjWWTmIZA2AsPgaejuCNyYw0UjYCiL0E/bundle_example_app.js"
+   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-YUqwCVKO4PvL-gm0_-_NcEMvMgQyui6txI4xtKnKKNY/bundle_example_app.js"
   },
   {
    "source": "/1/bundle/esm/l/en-US/bi/0/module/mi/example%2Fapp",
-   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-yYGgTcFHyuCqjWWTmIZA2AsPgaejuCNyYw0UjYCiL0E/bundle_example_app.js"
+   "destination": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-YUqwCVKO4PvL-gm0_-_NcEMvMgQyui6txI4xtKnKKNY/bundle_example_app.js"
   },
   {
    "source": "/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/esmLoader/v/0_18_3",

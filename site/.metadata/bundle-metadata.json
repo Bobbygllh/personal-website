@@ -14,13 +14,13 @@
     },
     "example/app|v/0_0_1": {
       "version": "0.0.1",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-yYGgTcFHyuCqjWWTmIZA2AsPgaejuCNyYw0UjYCiL0E/bundle_example_app.js",
+      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-YUqwCVKO4PvL-gm0_-_NcEMvMgQyui6txI4xtKnKKNY/bundle_example_app.js",
       "includedModules": [],
       "imports": [
         "lwc|v/8_22_4"
       ],
       "dynamicImports": [],
-      "integrity": "sha256-yYGgTcFHyuCqjWWTmIZA2AsPgaejuCNyYw0UjYCiL0E="
+      "integrity": "sha256-YUqwCVKO4PvL+gm0/+/NcEMvMgQyui6txI4xtKnKKNY="
     },
     "lwr/esmLoader|v/0_18_3": {
       "version": "0.18.3",
