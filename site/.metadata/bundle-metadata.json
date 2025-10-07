@@ -1,0 +1,38 @@
+{
+  "bundles": {
+    "lwc|v/8_22_4": {
+      "version": "8.22.4",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/lwc/v/8_22_4/s/sha256-LdOQu_XlZWwPVSrJt5CeNIZCD24_YTroL6miczhH3jA/bundle_lwc.js",
+      "includedModules": [],
+      "imports": [],
+      "dynamicImports": [],
+      "integrity": "sha256-LdOQu/XlZWwPVSrJt5CeNIZCD24/YTroL6miczhH3jA="
+    },
+    "@lwrjs/app-service/example/module/amd|v/0_18_3": {
+      "version": "0.18.3",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/@lwrjs/app-service/example/module/amd/v/0_18_3/s/sha256-cemKd0s2ca7TrHrmvYp__m6wBYfo6_RLls38gjChU5M/bundle_@lwrjs_app-service_example_module_amd.js",
+      "includedModules": [
+        "lwr/metrics|v/0_18_3",
+        "lwr/init|v/0_18_3",
+        "lwr/preInit|v/0_18_3"
+      ],
+      "imports": [
+        "lwr/profiler|v/0_18_3",
+        "lwc|v/8_22_4",
+        "lwr/loader|v/0_18_3"
+      ],
+      "dynamicImports": [],
+      "integrity": "sha256-cemKd0s2ca7TrHrmvYp//m6wBYfo6/RLls38gjChU5M="
+    },
+    "example/app|v/0_0_1": {
+      "version": "0.0.1",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-qfsOKtOXgwEBzFXcMjVDyZt2Z_XdZSbLtYDUehr_eHg/bundle_example_app.js",
+      "includedModules": [],
+      "imports": [
+        "lwc|v/8_22_4"
+      ],
+      "dynamicImports": [],
+      "integrity": "sha256-qfsOKtOXgwEBzFXcMjVDyZt2Z/XdZSbLtYDUehr/eHg="
+    }
+  }
+}
