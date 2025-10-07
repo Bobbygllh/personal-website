@@ -1,5 +1,15 @@
 {
   "bundles": {
+    "example/app|v/0_0_1": {
+      "version": "0.0.1",
+      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-kcxfX99-XM0cheLQR72yXAebWB-Se7jNYAEPD4QXOEU/bundle_example_app.js",
+      "includedModules": [],
+      "imports": [
+        "lwc|v/8_22_4"
+      ],
+      "dynamicImports": [],
+      "integrity": "sha256-kcxfX99+XM0cheLQR72yXAebWB+Se7jNYAEPD4QXOEU="
+    },
     "@lwrjs/app-service/example/module/esm|v/0_18_3": {
       "version": "0.18.3",
       "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/@lwrjs/app-service/example/module/esm/v/0_18_3/s/sha256-Uk5pMCW8LqbNDGwUaKqUwaExmQtXhrU4qfBVN_qsk7w/bundle_@lwrjs_app-service_example_module_esm.js",
@@ -12,15 +22,13 @@
       "dynamicImports": [],
       "integrity": "sha256-Uk5pMCW8LqbNDGwUaKqUwaExmQtXhrU4qfBVN/qsk7w="
     },
-    "example/app|v/0_0_1": {
-      "version": "0.0.1",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-xXIXvY-iy9Vj0uqfms_sUscswysYcjhIMZ8hpO3uXQw/bundle_example_app.js",
+    "lwc|v/8_22_4": {
+      "version": "8.22.4",
+      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/lwc/v/8_22_4/s/sha256-Grgizzf0C9YB-2L1mAu5toFKvWBn-9p3M73VF_Y1SRk/bundle_lwc.js",
       "includedModules": [],
-      "imports": [
-        "lwc|v/8_22_4"
-      ],
+      "imports": [],
       "dynamicImports": [],
-      "integrity": "sha256-xXIXvY+iy9Vj0uqfms/sUscswysYcjhIMZ8hpO3uXQw="
+      "integrity": "sha256-Grgizzf0C9YB+2L1mAu5toFKvWBn+9p3M73VF/Y1SRk="
     },
     "lwr/esmLoader|v/0_18_3": {
       "version": "0.18.3",
@@ -37,14 +45,6 @@
       "imports": [],
       "dynamicImports": [],
       "integrity": "sha256-kGLXJohj797McyfBP40zJ+/7G1vXcR4obQNMGxQNgGk="
-    },
-    "lwc|v/8_22_4": {
-      "version": "8.22.4",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/lwc/v/8_22_4/s/sha256-Grgizzf0C9YB-2L1mAu5toFKvWBn-9p3M73VF_Y1SRk/bundle_lwc.js",
-      "includedModules": [],
-      "imports": [],
-      "dynamicImports": [],
-      "integrity": "sha256-Grgizzf0C9YB+2L1mAu5toFKvWBn+9p3M73VF/Y1SRk="
     }
   }
 }
