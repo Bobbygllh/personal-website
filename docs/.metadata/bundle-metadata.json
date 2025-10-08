@@ -1,50 +1,47 @@
 {
   "bundles": {
-    "@lwrjs/app-service/example/module/esm|v/0_18_3": {
-      "version": "0.18.3",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/@lwrjs/app-service/example/module/esm/v/0_18_3/s/sha256-Uk5pMCW8LqbNDGwUaKqUwaExmQtXhrU4qfBVN_qsk7w/bundle_@lwrjs_app-service_example_module_esm.js",
+    "lwc|v/8_22_4": {
+      "version": "8.22.4",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/lwc/v/8_22_4/s/sha256-LdOQu_XlZWwPVSrJt5CeNIZCD24_YTroL6miczhH3jA/bundle_lwc.js",
       "includedModules": [],
+      "imports": [],
+      "dynamicImports": [],
+      "integrity": "sha256-LdOQu/XlZWwPVSrJt5CeNIZCD24/YTroL6miczhH3jA="
+    },
+    "@lwrjs/app-service/example/module/amd|v/0_18_3": {
+      "version": "0.18.3",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/@lwrjs/app-service/example/module/amd/v/0_18_3/s/sha256-cemKd0s2ca7TrHrmvYp__m6wBYfo6_RLls38gjChU5M/bundle_@lwrjs_app-service_example_module_amd.js",
+      "includedModules": [
+        "lwr/metrics|v/0_18_3",
+        "lwr/init|v/0_18_3",
+        "lwr/preInit|v/0_18_3"
+      ],
       "imports": [
-        "lwr/esmLoader|v/0_18_3",
         "lwr/profiler|v/0_18_3",
-        "lwc|v/8_22_4"
+        "lwc|v/8_22_4",
+        "lwr/loader|v/0_18_3"
       ],
       "dynamicImports": [],
-      "integrity": "sha256-Uk5pMCW8LqbNDGwUaKqUwaExmQtXhrU4qfBVN/qsk7w="
+      "integrity": "sha256-cemKd0s2ca7TrHrmvYp//m6wBYfo6/RLls38gjChU5M="
     },
     "example/app|v/0_0_1": {
       "version": "0.0.1",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-LY5dSzaGJ788r9p2681tShXQ0lnAjnNFBrjmOI8-brU/bundle_example_app.js",
-      "includedModules": [],
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-B6RtZ307Rr_sOEu2Z3j4_Opyil1SGV-VY6HoL7LXEQI/bundle_example_app.js",
+      "includedModules": [
+        "example/lwcBP|v/0_0_1",
+        "example/apexBP|v/0_0_1",
+        "example/blogs|v/0_0_1",
+        "example/lwcOssWebsite|v/0_0_1",
+        "example/caseApi|v/0_0_1",
+        "example/projects|v/0_0_1",
+        "example/navigation|v/0_0_1",
+        "example/sharedStyles|v/0_0_1"
+      ],
       "imports": [
         "lwc|v/8_22_4"
       ],
       "dynamicImports": [],
-      "integrity": "sha256-LY5dSzaGJ788r9p2681tShXQ0lnAjnNFBrjmOI8+brU="
-    },
-    "lwr/esmLoader|v/0_18_3": {
-      "version": "0.18.3",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/esmLoader/v/0_18_3/s/sha256-XZ3-fTIQeMpr-t515p72MK4vr6gSnXsH3O_YELtRaFw/bundle_lwr_esmLoader.js",
-      "includedModules": [],
-      "imports": [],
-      "dynamicImports": [],
-      "integrity": "sha256-XZ3+fTIQeMpr+t515p72MK4vr6gSnXsH3O/YELtRaFw="
-    },
-    "lwr/profiler|v/0_18_3": {
-      "version": "0.18.3",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_18_3/s/sha256-kGLXJohj797McyfBP40zJ-_7G1vXcR4obQNMGxQNgGk/bundle_lwr_profiler.js",
-      "includedModules": [],
-      "imports": [],
-      "dynamicImports": [],
-      "integrity": "sha256-kGLXJohj797McyfBP40zJ+/7G1vXcR4obQNMGxQNgGk="
-    },
-    "lwc|v/8_22_4": {
-      "version": "8.22.4",
-      "path": "/1/bundle/esm/l/en-US/bi/0/module/mi/lwc/v/8_22_4/s/sha256-Grgizzf0C9YB-2L1mAu5toFKvWBn-9p3M73VF_Y1SRk/bundle_lwc.js",
-      "includedModules": [],
-      "imports": [],
-      "dynamicImports": [],
-      "integrity": "sha256-Grgizzf0C9YB+2L1mAu5toFKvWBn+9p3M73VF/Y1SRk="
+      "integrity": "sha256-B6RtZ307Rr/sOEu2Z3j4/Opyil1SGV+VY6HoL7LXEQI="
     }
   }
 }
