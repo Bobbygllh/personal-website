@@ -3,7 +3,7 @@ import _implicitScopedStylesheets from "./apexBP.scoped.css?scoped=true";
 import _exampleMagicLink from "example/magicLink";
 import {freezeTemplate, parseFragment, registerTemplate} from "lwc";
 const $fragment1 = parseFragment`<h1${3}>Apex Best Practices</h1>`;
-const $fragment2 = parseFragment`<p${3}>There are a lot of very solid articles that hit a on the basic tenants of Apex development in Salesforce. Items like &quot;don&#x27;t put a query in a for loop&quot;. I want to provide some more in depth best practices that expand on some of these items and touch a bit more on general programming practices.</p>`;
+const $fragment2 = parseFragment`<p${3}>There are a lot of very good articles that hit on the basic tenants of Apex development in Salesforce. They all have similar best practices like &quot;don&#x27;t put a query in a for loop&quot;. I want to provide some more in depth best practices that expand on some of these items and touch a bit more on general programmatic best practices.</p>`;
 const $fragment3 = parseFragment`<h3${3}>Check if Object/variables are null before accessing to avoid Null Pointer exceptions</h3>`;
 const $fragment4 = parseFragment`<p${3}>Null pointer exceptions are thrown when trying to access/use an object reference or variable which has a null value or is not initialized. Often code that could potentially throw a NullPointerException error isn&#x27;t within try/catch blocks like DML statements, so the error will reach the user or roll back the process entirely. We need to check whether an object or variable is null before we run a method upon it (like get or toString etc. etc.) There are two ways we can do so, utilizing the safe navigation operator or a simple if statement if(object!= null). The preferred method would be the safe navigation operator as it allows for cleaner, more readable code. For example, instead of the following:</p>`;
 const $fragment5 = parseFragment`<img class="client-credentials${0}" src="public/assets/1apex.png" alt="client creds"${2}>`;
@@ -62,8 +62,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];
-tmpl.stylesheetToken = "lwc-ajssbuvofl";
-tmpl.legacyStylesheetToken = "-apexBP_apexBP";
+tmpl.stylesheetToken = "lwc-24vgmja5mne";
+tmpl.legacyStylesheetToken = "example-apexBP_apexBP";
 if (_implicitStylesheets) {
   tmpl.stylesheets.push.apply(tmpl.stylesheets, _implicitStylesheets);
 }
