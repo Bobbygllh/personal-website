@@ -26,7 +26,7 @@
     },
     "example/app|v/0_0_1": {
       "version": "0.0.1",
-      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-Ul6MkzHDfCru6Mc6b0B9Kb_awioaXtDBpxd4Q44AnJE/bundle_example_app.js",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-gretFRfzPnuA07e9boM1GalguLHnYlKMV6qzXFZRq5I/bundle_example_app.js",
       "includedModules": [
         "example/lwcBP|v/0_0_1",
         "example/apexBP|v/0_0_1",
@@ -34,6 +34,7 @@
         "example/lwcOssWebsite|v/0_0_1",
         "example/caseApi|v/0_0_1",
         "example/projects|v/0_0_1",
+        "example/magicLink|v/0_0_1",
         "example/navigation|v/0_0_1",
         "example/sharedStyles|v/0_0_1"
       ],
@@ -41,7 +42,7 @@
         "lwc|v/8_22_4"
       ],
       "dynamicImports": [],
-      "integrity": "sha256-Ul6MkzHDfCru6Mc6b0B9Kb/awioaXtDBpxd4Q44AnJE="
+      "integrity": "sha256-gretFRfzPnuA07e9boM1GalguLHnYlKMV6qzXFZRq5I="
     }
   }
 }

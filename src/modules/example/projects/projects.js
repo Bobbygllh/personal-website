@@ -11,7 +11,7 @@ export default class Projects extends LightningElement {
     @api 
     reset() {
         this.isSelectionShown = true;
-        this.renderLwcs = JSON.parse(JSON.stringify(RENDER_LWCS))
+        this.renderLwcs = JSON.parse(JSON.stringify(RENDER_LWCS));
     }
 
     @track renderLwcs = JSON.parse(JSON.stringify(RENDER_LWCS));

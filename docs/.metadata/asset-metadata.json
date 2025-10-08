@@ -40,6 +40,10 @@
       "path": "/public/assets/allybank.webp",
       "mimeType": "image/webp"
     },
+    "/public/assets/apex9.png": {
+      "path": "/public/assets/apex9.png",
+      "mimeType": "image/png"
+    },
     "/public/assets/api-integration.webp": {
       "path": "/public/assets/api-integration.webp",
       "mimeType": "image/webp"

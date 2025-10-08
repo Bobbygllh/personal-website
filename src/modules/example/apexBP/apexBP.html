@@ -1,7 +1,12 @@
 <template>
-    <!--  -->
     <div class="m-auto body-text">
         <h1>Apex Best Practices</h1>
+        <p>
+            There are a lot of very solid articles that hit a on the basic tenants of Apex development in Salesforce. Items like
+            "don't put a query in a for loop". I want to provide some more in depth best practices that expand on some of these
+            items and touch a bit more on general programming practices.
+        </p>
+        <example-magic-link link="https://www.salesforceben.com/12-salesforce-apex-best-practices/" label="Good Fundamental Article"></example-magic-link>
          
         <h3>Check if Object/variables are null before accessing to avoid Null Pointer exceptions</h3>
         <p>
@@ -63,18 +68,17 @@
         <img class="client-credentials" src="public/assets/5apex.png" alt="client creds"/>
         <h3>Don't write code in Apex Triggers</h3>
         <p>
-            There are a couple currently existing Apex triggers which contain code but going forward we should not be writing new Apex Triggers other than generic handler classes. 
-            A good example of a trigger containing business logic is CaseToAlfa, preferably that logic would be called by CaseTriggerHandler. By utilizing a Trigger handler we can 
-            determine in what order the code runs and maintain our system of organization.
+            Writing code directly in triggers does not allow for the modularity we need to write effective maintainabe code. While this falls under the category of "fundamentals", 
+            it is worth detailing here. By utilizing a Trigger handler we can determine in what order the code runs and maintain our system of organization.
         </p>
         <img class="client-credentials" src="public/assets/6apex.png" alt="client creds"/>
         <h3>Use curly braces for if statements/For Loops</h3>
         <p>
-            An age old debate but there is a lot of code in the code base which does not utilize curly braces following if or for statements/loops. The argument for curly braces is
-            it reduces potential mistakes or confusion from developers maintaining the codebase. No curly braces even caused a very notable Apple bug. Here is a screenshot from 
-            stackoverflow outlining the potential for confusion caused by no curly braces:
+            An age old debate but there is a lot of code in the code base which does not utilize curly braces following if or for statements/loops. The argument for 
+            curly braces is it reduces potential mistakes or confusion from developers maintaining the codebase. No curly braces even caused a very notable Apple bug.
+            Here is a screenshot from stackoverflow outlining the potential for confusion caused by no curly braces:
         </p>
-        <img class="client-credentials" src="public/assets/Client-Credentials.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/apex9.png" alt="client creds"/>
         <p>this example from the codebase shows how reading mixed curly braces/no curly braces is confusing</p>
         <img class="client-credentials" src="public/assets/7apex.png" alt="client creds"/>
         </br>

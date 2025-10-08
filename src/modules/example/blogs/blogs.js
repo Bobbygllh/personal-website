@@ -1,28 +1,21 @@
 import { LightningElement, track, api } from 'lwc';
 import { blogItems } from './individualblogs';
 
+const RENDER_LWCS = {
+    apexBP : false,
+    lwcBP : false
+}
+
 export default class Blogs extends LightningElement {
     blogObjs = blogItems;
     isSelectionShown = false;
     @api 
     reset() {
         this.isSelectionShown = true;
+        this.renderLwcs = JSON.parse(JSON.stringify(RENDER_LWCS));
     }
 
-    connectedCallback() {
-        // Register the popstate event listener when the component is connected
-        window.addEventListener('popstate', this.handleHistoryChange);
-    }
-
-    disconnectedCallback() {
-        // Remove the event listener when the component is disconnected
-        window.removeEventListener('popstate', this.handleHistoryChange);
-    }
-
-    @track renderLwcs = {
-         apexBP : false,
-         lwcBP : false
-    }
+    @track renderLwcs = JSON.parse(JSON.stringify(RENDER_LWCS));
 
     connectedCallback() {
         this.isSelectionShown = true;
