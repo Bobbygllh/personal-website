@@ -13,13 +13,13 @@
              preferred method would be the safe navigation operator as it allows for cleaner, more readable code. For example, 
              instead of the following:
         </p>
-        <img class="client-credentials" src="/public/assets/1apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/1apex.png" alt="client creds"/>
         <p>
             We could rewrite it as below utilizing the safe navigation operator. Putting ? before the get method means that if the 
             retrieveRecordTypesByDeveloperName() method returns null then running .get() won't produce a null pointer exception. 
             Without the safe navigation operator (or a if null check to ensure its defined) then a Null Pointer Exception would be thrown
         </p>
-        <img class="client-credentials" src="/public/assets/2apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/2apex.png" alt="client creds"/>
         <!-- Map<Id, Map<Id, Map<Id,sObject>>>>  -->
         <p>
             This is particularly effective in accessing multilevel maps like sampleMap. Instead of long or 
@@ -32,7 +32,7 @@
             once instead of twice during a codes execution that is preferable. However what we want to explicitly avoid is triple looping. This 
             significantly eats up CPU time and causes our operations to take longer than they need to. An example of triple looping is the below:
         </p>
-        <img class="client-credentials" src="/public/assets/3apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/3apex.png" alt="client creds"/>
         <h3>Handle Potential Exceptions in Try/Catch blocks</h3>
         <p>
             Correctly handling exceptions in Apex is essential, unhandled errors will roll back the code execution and make it more difficult to debug issues.
@@ -49,7 +49,7 @@
         </p>
         <strong>DO</strong>
         <p>Stack multiple catch statements if you need to handle errors in different ways</p>
-        <img class="client-credentials" src="/public/assets/4apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/4apex.png" alt="client creds"/>
         </br>
         <strong>DON'T</strong>
         <p>
@@ -60,27 +60,27 @@
         <p>
             Have an empty catch statement or a catch statement that just System.debugs the code. This will make debugging nearly impossible as we're entirely suppressing errors
         </p>
-        <img class="client-credentials" src="/public/assets/5apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/5apex.png" alt="client creds"/>
         <h3>Don't write code in Apex Triggers</h3>
         <p>
             There are a couple currently existing Apex triggers which contain code but going forward we should not be writing new Apex Triggers other than generic handler classes. 
             A good example of a trigger containing business logic is CaseToAlfa, preferably that logic would be called by CaseTriggerHandler. By utilizing a Trigger handler we can 
             determine in what order the code runs and maintain our system of organization.
         </p>
-        <img class="client-credentials" src="/public/assets/6apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/6apex.png" alt="client creds"/>
         <h3>Use curly braces for if statements/For Loops</h3>
         <p>
             An age old debate but there is a lot of code in the code base which does not utilize curly braces following if or for statements/loops. The argument for curly braces is
             it reduces potential mistakes or confusion from developers maintaining the codebase. No curly braces even caused a very notable Apple bug. Here is a screenshot from 
             stackoverflow outlining the potential for confusion caused by no curly braces:
         </p>
-        <img class="client-credentials" src="/public/assets/Client-Credentials.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/Client-Credentials.png" alt="client creds"/>
         <p>this example from the codebase shows how reading mixed curly braces/no curly braces is confusing</p>
-        <img class="client-credentials" src="/public/assets/7apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/7apex.png" alt="client creds"/>
         </br>
         <strong>DO</strong>
         <p>no ambiguity, easier to read</p>
-        <img class="client-credentials" src="/public/assets/8apex.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/8apex.png" alt="client creds"/>
         <h3>Cover all testing scenarios with System.assert methods</h3>
         <ul>
             <li>

@@ -45,7 +45,7 @@
             the task scope outlines using a Client Credentials flow. The gold standard for Oauth2.0 authentication flows is the JWT Bearer Flow, however sometimes
             the external system cannot support this flow, so a Client Credentials flow is the second most secure choice. Below is an outline of the flow:
         </p>
-       <img class="client-credentials" src="/public/assets/Client-Credentials.png" alt="client creds"/>
+       <img class="client-credentials" src="public/assets/Client-Credentials.png" alt="client creds"/>
        <span><a href="https://blog.beyondthecloud.dev/blog/salesforce-oauth-2-0-flows-integrate-in-the-right-way">Source</a></span>
         <p>
             the basic structure is that the calling system will hold a Client Id and Client Secret that it will utilize the call the Salesforce system. The system
@@ -58,13 +58,13 @@
             correctly choosing the scope of the Connected App. For our given scenario, the best choice is the Manage user data via APIs. This will still allow Case creation
             but limit the external client to only accessing Salesforces APIs. 
         </p>
-        <img class="client-credentials" src="/public/assets/connected-app-settings.png" alt="client creds"/>
+        <img class="client-credentials" src="public/assets/connected-app-settings.png" alt="client creds"/>
         <p>
             However, our system might have multiple APIs and the standard sObject APIs are also quite powerful. So we will need a way to further reduce the access that the 
             calling system will have. We can do this using an specific integration user that we will create. Any operation the external client does after authenticating to
             our Connected App will be done as this user.
         </p>
-        <img class="integration-user" src="/public/assets/integration-user.png" alt="client creds"/>
+        <img class="integration-user" src="public/assets/integration-user.png" alt="client creds"/>
         <h3>Integration User</h3>
         <p>
             When creating this user (or any user), we'll need to consider the license and profile. Salesforce has fortunately created a license specifically for integration
@@ -73,7 +73,7 @@
             will need to open up a few permissions and we can do that with the flexibility of Permission Sets. We can provide access to the fields that will be set upon insertion
             as well as give Read and Edit access to Case.
         </p>
-        <img class="client-credentials" src="/public/assets/permission-set.png"/>
+        <img class="client-credentials" src="public/assets/permission-set.png"/>
         <h2>REST Endpoint</h2>
         <p>
             Now that we have the authentication piece all set, we can move towards creating a custom REST endpoint for the external team to call. We will create an apex class
@@ -90,12 +90,12 @@
             We can accomplish this with a few patterns. The first of which is our exception pattern. We create a custom exception within the class so 
             that we can include specific information when we throw the exception, like the ResponseInfo class (more on that later)
         </p>
-        <img class="client-credentials" src="/public/assets/custom-exception.png"/>
+        <img class="client-credentials" src="public/assets/custom-exception.png"/>
         <p>
             We will wrap all of the code that will run during API execution context in a Try / Catch. In addition to catching our custom exception it allows
             us to handle unexpected exceptions but still format the response in the same way every time so the calling system knows what to expect.
         </p>
-        <img class="client-credentials" src="/public/assets/try-catch.png"/>
+        <img class="client-credentials" src="public/assets/try-catch.png"/>
         <p>
             This also allows us to effectively stop the execution from anywhere in the code by throwing our custom exception with the necessary information. 
             When a structure like this is not implemented, it makes it very difficult when an issue is detected to stop the execution and return a response up the
@@ -108,7 +108,7 @@
         <p>
             The beauty of this pattern is in the ResponseInfo methods sitting near the top of the class. 
         </p>
-        <img class="client-credentials" src="/public/assets/response-info.png"/>
+        <img class="client-credentials" src="public/assets/response-info.png"/>
         <p>
             These effectively become documentation for every possible response that we will return. These methods are clearly named and have a response code (ie. 201, 400 etc.),
             a string response code and an error message. This makes it very easy to add new ResponseInfos, reuse them and see what part of the code threw them.
@@ -118,7 +118,7 @@
             will check if it is valid. if it is not, it will throw a custom exception with a ResponseInfo object. The error message will be dynamic, including the value they attempted
             to pass in so they can easily understand what the expectation is vs. what they provided.
         </p>
-        <img class="client-credentials" src="/public/assets/origin-check.png"/>
+        <img class="client-credentials" src="public/assets/origin-check.png"/>
         <h2>Testing</h2>
         <p>
             The first aspect of testing that we'll need to complete is an Apex test class. The most critical piece that I often see missed in integration testing is
@@ -126,7 +126,7 @@
             that integration user, it will run as the running executing the test class, who will likely have vastly different permissions. The rest of the tests are
             straightforward, we want to test positive scenarios as well as negative scenarios and ensure we are Asserting 
         </p>
-        <img class="client-credentials" src="/public/assets/test-class.png"/>
+        <img class="client-credentials" src="public/assets/test-class.png"/>
         <p> 
             The next step is setting up some type of ability to manually call the API. In the <a href="https://github.com/Bobbygllh/CreateCaseAPI/blob/main/README.md">ReadME </a>
             I detail how to use a powerful VS Code tool called RestClient Extension to call the endpoint. Having an easy way to modify the Request and test the API
