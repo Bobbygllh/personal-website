@@ -1,0 +1,9 @@
+@import "example/sharedStyles";
+
+.client-credentials {
+    width: 80%
+}
+
+.integration-user {
+     width: 90%
+}

@@ -1,0 +1,8 @@
+function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  var suffixToken = token ? ("-" + token) : "";
+  return ".body-text" + shadowSelector + " {font-size: 1.05rem;max-width: 45rem;line-height: 1.75;}.body-text" + shadowSelector + " a" + shadowSelector + " {font-weight: inherit;text-decoration: none;border-bottom: 1px solid rgba(125, 125, 125, .3);transition: border .3s ease-in-out}.body-text" + shadowSelector + " a:hover" + shadowSelector + " {border-bottom: 1px solid black;}.p-med-top" + shadowSelector + " {padding-top: 1rem;}.p-left" + shadowSelector + " {margin-left: .25rem;}.p-left-large" + shadowSelector + " {margin-left: 4rem;}.m-auto" + shadowSelector + " {margin: auto;}.items-center" + shadowSelector + " {align-items: center;}.flex" + shadowSelector + " {display: flex;}.flex-auto" + shadowSelector + " {flex: 1 1 auto;}.pt-2" + shadowSelector + ", .pt2" + shadowSelector + " {padding-top: .5rem;}.pr-5" + shadowSelector + " {padding-right: 1.25rem;}.op50" + shadowSelector + " {opacity: .5;}.font-400" + shadowSelector + " {font-weight: 400;}.text-sm" + shadowSelector + " {font-size: .875rem;line-height: 1.25rem;}.code-textarea" + shadowSelector + " {width: 100%;background-color: #433c3c;color: #dcdcdc;font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;font-size: 14px;line-height: 1.5;padding: 16px;border: 1px solid #333;border-radius: 8px;resize: vertical;overflow: auto;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);caret-color: #00ff99;outline: none;}.page-height" + shadowSelector + " {height: 1000px;}";
+  /*LWC compiler v8.22.4*/
+}
+export default [stylesheet];

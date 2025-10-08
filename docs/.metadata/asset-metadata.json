@@ -1,11 +1,119 @@
 {
   "assets": {
+    "/public/assets/1apex.png": {
+      "path": "/public/assets/1apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/2apex.png": {
+      "path": "/public/assets/2apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/3apex.png": {
+      "path": "/public/assets/3apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/4apex.png": {
+      "path": "/public/assets/4apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/5apex.png": {
+      "path": "/public/assets/5apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/6apex.png": {
+      "path": "/public/assets/6apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/7apex.png": {
+      "path": "/public/assets/7apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/8apex.png": {
+      "path": "/public/assets/8apex.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/Client-Credentials.png": {
+      "path": "/public/assets/Client-Credentials.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/allybank.webp": {
+      "path": "/public/assets/allybank.webp",
+      "mimeType": "image/webp"
+    },
+    "/public/assets/api-integration.webp": {
+      "path": "/public/assets/api-integration.webp",
+      "mimeType": "image/webp"
+    },
+    "/public/assets/background.png": {
+      "path": "/public/assets/background.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/bg.svg": {
+      "path": "/public/assets/bg.svg",
+      "mimeType": "image/svg+xml"
+    },
+    "/public/assets/connected-app-settings.png": {
+      "path": "/public/assets/connected-app-settings.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/custom-exception.png": {
+      "path": "/public/assets/custom-exception.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/deploy.yml": {
+      "path": "/public/assets/deploy.yml",
+      "mimeType": "text/yaml"
+    },
     "/public/assets/favicon.ico": {
       "path": "/public/assets/favicon.ico",
       "mimeType": "image/vnd.microsoft.icon"
     },
+    "/public/assets/github-mark.png": {
+      "path": "/public/assets/github-mark.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/integration-user.png": {
+      "path": "/public/assets/integration-user.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/lwc.png": {
+      "path": "/public/assets/lwc.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/no_background_initials.png": {
+      "path": "/public/assets/no_background_initials.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/origin-check.png": {
+      "path": "/public/assets/origin-check.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/permission-set.png": {
+      "path": "/public/assets/permission-set.png",
+      "mimeType": "image/png"
+    },
     "/public/assets/recipes-logo.png": {
       "path": "/public/assets/recipes-logo.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/response-info.png": {
+      "path": "/public/assets/response-info.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/skiing.jpg": {
+      "path": "/public/assets/skiing.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "/public/assets/surfing.jpg": {
+      "path": "/public/assets/surfing.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "/public/assets/test-class.png": {
+      "path": "/public/assets/test-class.png",
+      "mimeType": "image/png"
+    },
+    "/public/assets/try-catch.png": {
+      "path": "/public/assets/try-catch.png",
       "mimeType": "image/png"
     },
     "/favicon.ico": {

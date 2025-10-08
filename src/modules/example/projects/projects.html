@@ -1,0 +1,18 @@
+<template>
+    <div lwc:if={isSelectionShown} class="m-auto body-text page-height">
+        <h1>Projects</h1>
+        <div>
+            <template for:each={projectObjs} for:item="item">
+                <a key={item.lwcReference} class="project-item project-detail-item relative flex items-center" data-item={item.lwcReference} href="#" onclick={handleNavigate}>
+                    <img class="project-image pr-5" src={item.image}></img>
+                    <div class="flex-auto">
+                        <div class="text-normal">{item.title}</div>
+                        <div class="desc text-sm opacity-50 font-normal">{item.description}</div>
+                    </div>
+                </a>   
+            </template>
+        </div>
+    </div>
+    <example-case-api lwc:if={renderLwcs.caseApi}></example-case-api>
+    <example-lwc-oss-website lwc:if={renderLwcs.lwcOSS}></example-lwc-oss-website> 
+</template>

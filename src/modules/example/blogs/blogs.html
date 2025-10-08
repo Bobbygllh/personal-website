@@ -1,0 +1,17 @@
+<template>
+    <div lwc:if={isSelectionShown} class="m-auto body-text page-height">
+        <h1>Blogs</h1>
+        <div>
+            <template for:each={blogObjs} for:item="item">
+                <a key={item.lwcReference} class="font-inherit flex items-center p-med-top" data-item={item.lwcReference} href="#" onclick={handleNavigate}>
+                    <div class="flex-auto">
+                        <div>{item.title}</div>
+                        <div class="text-sm">{item.date}</div>
+                    </div>
+                </a>   
+            </template>
+        </div>
+    </div>
+    <example-apex-b-p lwc:if={renderLwcs.apexBP}></example-apex-b-p> 
+    <example-lwc-b-p lwc:if={renderLwcs.lwcBP}></example-lwc-b-p>
+</template>

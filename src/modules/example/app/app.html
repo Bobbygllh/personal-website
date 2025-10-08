@@ -1,6 +1,46 @@
 <template>
-    <main>
-        <!-- <img src="/public/assets/recipes-logo.png" alt="logo" /> -->
-        <h1>Hello World!!</h1>
-    </main>
+    <div style="background-image: url(https://i.imgur.com/w074t77.png);" >
+        <header>
+            <example-navigation oncategorychange={handleCategoryChange}></example-navigation>
+        </header>
+        <div class="m-auto body-text" lwc:if={navigationItems.mainpage.visible}>
+            <h1>Introduction</h1>
+            <p>Hi! I'm Bobby Gallahue, a Technical Lead with 7 years of experiance specializing in working on complex systems. I am currently
+                getting my Masters at Tufts University in Computer Science with a planned graduation date of fall 2027</p>
+            <p>I am currently working at 
+                <a href="https://www.ally.com/" class="p-left markdown-magic-link" target="_blank">
+                    <span class="markdown-magic-link-image" style="background-image: url(https://play-lh.googleusercontent.com/fWqKGby23VpE85tWtvLBfBAIvfch65lnfFF9NgFt-e_uQIoO_5lSOT6yipYNKkghcYs=w240-h480-rw);"></span>
+                    Ally Bank
+                </a>
+            </p>
+            <p>With previous stops at 
+                <a href="https://www.linkedin.com/company/cervello/" class="p-left markdown-magic-link" target="_blank">
+                    <span class="markdown-magic-link-image" style="background-image: url(https://media.glassdoor.com/sql/718914/cervello-squarelogo-1442564055673.png);"></span>
+                    Cervello
+                </a>
+                <span> and </span>
+                <a href="https://www.fiarch.com/" class="p-left markdown-magic-link" target="_blank">
+                    <span class="markdown-magic-link-image" style="background-image: url(https://media.licdn.com/dms/image/v2/D4E0BAQEaohaOrBW-CQ/company-logo_200_200/company-logo_200_200/0/1733775033094/financial_architects_partners_logo?e=1762992000&v=beta&t=TaP3E_mmX_WrQvChexbXNSJSm-y7iLWvwcOGpo-XH9E);"></span>
+                    Financial Architect Partners
+                </a>
+            </p>
+            <h3>Background</h3>
+            <p>
+                I began to learn to code after a challenging experiencing finding an eye doctor. The websites I encountered contained 
+                little information on what insurance the doctors took or how much a basic checkup might cost. Although I had no coding
+                experiece, I wanted to see if I could improve the process and built some sample websites. This ignited a love for coding
+                and an eventual career change. My passion for building applications and making some small improvement peoples day to day 
+                lives has not waned and I’m excited to keep learning and building.
+            </p>
+            <h3>About Me</h3>
+             <p>
+                Outside of work I am a passionate skier, surfer and mountain biker and you can typically find me somewhere in the
+                White Mountains, Green Mountains or Seacoast of New Hampshire
+            </p>
+            <img class="about-me-image" src="/public/assets/skiing.jpg" alt="logo"/>
+            <img class="about-me-image p-left-large" src="/public/assets/surfing.jpg" alt="logo"/>
+        </div>
+        <example-projects oncategorychange={handleCategoryChange} lwc:if={navigationItems.projects.visible}></example-projects>
+        <example-blogs oncategorychange={handleCategoryChange} lwc:if={navigationItems.blogs.visible}></example-blogs>
+    </div>
 </template>
