@@ -1,0 +1,89 @@
+.body-text {
+  font-size: 1.05rem;
+  max-width: 45rem;
+  line-height: 1.75;
+}
+
+.body-text a {
+    font-weight: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(125, 125, 125, .3);
+    transition: border .3s ease-in-out
+}
+
+.body-text a:hover {
+    border-bottom: 1px solid black;
+}
+
+.p-med-top {
+    padding-top: 1rem;
+}
+
+.p-med-bottom {
+     padding-bottom: 1rem;
+}
+
+.p-left {
+    margin-left: .25rem;
+}
+
+.p-left-large {
+    margin-left: 4rem;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-auto {
+    flex: 1 1 auto;
+}
+
+.pt-2, .pt2 {
+    padding-top: .5rem;
+}
+.pr-5 {
+    padding-right: 1.25rem;
+}
+
+.op50 {
+    opacity: .5;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.code-textarea {
+  width: 100%;
+  background-color: #433c3c; /* dark editor background */
+  color: #dcdcdc; /* light text */
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  resize: vertical; /* allow vertical resizing */
+  overflow: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  caret-color: #00ff99; /* green cursor */
+  outline: none;
+}
+
+.page-height {
+    height: 1000px;
+}

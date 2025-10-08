@@ -3,7 +3,7 @@ import _implicitScopedStylesheets from "./caseApi.scoped.css?scoped=true";
 import _exampleMagicLink from "example/magicLink";
 import {freezeTemplate, parseFragment, registerTemplate} from "lwc";
 const $fragment1 = parseFragment`<h1${3}>Case Creation API Integration</h1>`;
-const $fragment2 = parseFragment`<div class="code-textarea${0}"${2}><p${3}>Task: Your company would like to leverage Salesforce to respond to customer support cases and they would like you to create a custom API that will create a Case record in Salesforce. This API will be used in web, as well as in their Android and iOS applications. Expose a REST Resource class that can be used by engineering to support this use case.</p><ul${3}><li${3}>Origin can be either &quot;web&quot; or &quot;mobile&quot;</li><li${3}>Build a Client Credentials Authentication flow</li><li${3}>Status will be &quot;New&quot;</li><li${3}>The payload request you can expect is below:</li></ul><span${3}>${"t13"}</span></div>`;
+const $fragment2 = parseFragment`<div class="code-textarea p-med-top${0}"${2}><p${3}>Task: Your company would like to leverage Salesforce to respond to customer support cases and they would like you to create a custom API that will create a Case record in Salesforce. This API will be used in web, as well as in their Android and iOS applications. Expose a REST Resource class that can be used by engineering to support this use case.</p><ul${3}><li${3}>Origin can be either &quot;web&quot; or &quot;mobile&quot;</li><li${3}>Build a Client Credentials Authentication flow</li><li${3}>Status will be &quot;New&quot;</li><li${3}>The payload request you can expect is below:</li></ul><span${3}>${"t13"}</span></div>`;
 const $fragment3 = parseFragment`<h1${3}>Initial Thoughts</h1>`;
 const $fragment4 = parseFragment`<p${3}>The first consideration is if a custom API is necessary and whether we can we direct the engineering team to use the standard existing services sObject APIs <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_sobject_basic_info_post.htm"${3}> (LINK)</a>. This would allow the team to insert Cases without us needing to build them a custom api, which would save a good amount of team effort. Through the auth process and integration user we would be able to limit their access. The challenge is that the requirements of enforcing that the Origin is either &quot;web&quot; or &quot;mobile&quot; would prove challenging. We could enfore this in a validation rule, before save flow, apex etc. However we do not want to enfore this requirement every time a Case is created. One &quot;workaround&quot; is we could create a checkbox field and ask the engineering team to set it to true on insert. With this we could check the Origin conditions and when the checkbox isn&#x27;t set, we&#x27;d ignore it. However, that is bit of a janky workaround and for the purposes of this exercise we will assume that we want this as foolproof as possible and that that is not an option.</p>`;
 const $fragment5 = parseFragment`<h1${3}>What We Will Build</h1>`;
@@ -48,15 +48,29 @@ const stc0 = {
   key: 0
 };
 const stc1 = {
+  classMap: {
+    "p-med-bottom": true
+  },
+  key: 3
+};
+const stc2 = {
+  props: {
+    "link": "https://github.com/Bobbygllh/CreateCaseAPI/",
+    "label": "Github Repo Link",
+    "picture": "background-image: url(https://bornsql.ca/wp-content/uploads/2022/03/Git-Logo-2Color.png);"
+  },
+  key: 4
+};
+const stc3 = {
   props: {
     "link": "https://blog.beyondthecloud.dev/blog/salesforce-oauth-2-0-flows-integrate-in-the-right-way",
     "label": "Source"
   },
-  key: 23
+  key: 25
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {st: api_static_fragment, d: api_dynamic_text, sp: api_static_part, c: api_custom_element, h: api_element} = $api;
-  return [api_element("div", stc0, [api_static_fragment($fragment1, 2), api_static_fragment($fragment2, 4, [api_static_part(13, null, api_dynamic_text($cmp.data))]), api_static_fragment($fragment3, 6), api_static_fragment($fragment4, 8), api_static_fragment($fragment5, 10), api_static_fragment($fragment6, 12), api_static_fragment($fragment7, 14), api_static_fragment($fragment8, 16), api_static_fragment($fragment9, 18), api_static_fragment($fragment10, 20), api_static_fragment($fragment11, 22), api_custom_element("example-magic-link", _exampleMagicLink, stc1), api_static_fragment($fragment12, 25), api_static_fragment($fragment13, 27), api_static_fragment($fragment14, 29), api_static_fragment($fragment15, 31), api_static_fragment($fragment16, 33), api_static_fragment($fragment17, 35), api_static_fragment($fragment18, 37), api_static_fragment($fragment19, 39), api_static_fragment($fragment20, 41), api_static_fragment($fragment21, 43), api_static_fragment($fragment22, 45), api_static_fragment($fragment23, 47), api_static_fragment($fragment24, 49), api_static_fragment($fragment25, 51), api_static_fragment($fragment26, 53), api_static_fragment($fragment27, 55), api_static_fragment($fragment28, 57), api_static_fragment($fragment29, 59), api_static_fragment($fragment30, 61), api_static_fragment($fragment31, 63), api_static_fragment($fragment32, 65), api_static_fragment($fragment33, 67), api_static_fragment($fragment34, 69), api_static_fragment($fragment35, 71), api_static_fragment($fragment36, 73), api_static_fragment($fragment37, 75), api_static_fragment($fragment38, 77)])];
+  const {st: api_static_fragment, c: api_custom_element, h: api_element, d: api_dynamic_text, sp: api_static_part} = $api;
+  return [api_element("div", stc0, [api_static_fragment($fragment1, 2), api_element("div", stc1, [api_custom_element("example-magic-link", _exampleMagicLink, stc2)]), api_static_fragment($fragment2, 6, [api_static_part(13, null, api_dynamic_text($cmp.data))]), api_static_fragment($fragment3, 8), api_static_fragment($fragment4, 10), api_static_fragment($fragment5, 12), api_static_fragment($fragment6, 14), api_static_fragment($fragment7, 16), api_static_fragment($fragment8, 18), api_static_fragment($fragment9, 20), api_static_fragment($fragment10, 22), api_static_fragment($fragment11, 24), api_custom_element("example-magic-link", _exampleMagicLink, stc3), api_static_fragment($fragment12, 27), api_static_fragment($fragment13, 29), api_static_fragment($fragment14, 31), api_static_fragment($fragment15, 33), api_static_fragment($fragment16, 35), api_static_fragment($fragment17, 37), api_static_fragment($fragment18, 39), api_static_fragment($fragment19, 41), api_static_fragment($fragment20, 43), api_static_fragment($fragment21, 45), api_static_fragment($fragment22, 47), api_static_fragment($fragment23, 49), api_static_fragment($fragment24, 51), api_static_fragment($fragment25, 53), api_static_fragment($fragment26, 55), api_static_fragment($fragment27, 57), api_static_fragment($fragment28, 59), api_static_fragment($fragment29, 61), api_static_fragment($fragment30, 63), api_static_fragment($fragment31, 65), api_static_fragment($fragment32, 67), api_static_fragment($fragment33, 69), api_static_fragment($fragment34, 71), api_static_fragment($fragment35, 73), api_static_fragment($fragment36, 75), api_static_fragment($fragment37, 77), api_static_fragment($fragment38, 79)])];
   /*LWC compiler v8.22.4*/
 }
 export default registerTemplate(tmpl);
