@@ -9,7 +9,7 @@ const $fragment4 = parseFragment`<h3${3}>Positives</h3>`;
 const $fragment5 = parseFragment`<ul${3}><li${3}>As I mentioned above, LWC OSS is LWC, so it a framework I was comfortable with and could problem solve quickly with</li><li${3}>Not battling the Lightning styling when trying to tweak styling was a nice change of pace</li></ul>`;
 const $fragment6 = parseFragment`<h3${3}>Negatives</h3>`;
 const $fragment7 = parseFragment`<ul${3}><li${3}>Lightning components (like lightning-input) and SLDS classes are not available</li><li${3}>The challenges with loading and working with 3rd party libararies still exists</li><li${3}>There is not a significant community using LWC OSS and the lack of support makes things challenging. </li><li${3}>Figuring out the changes necessary to get the site compatible with Github Pages was painful</li><li${3}>Everything needs to be built custom. There is likely some path towards getting a styling library like bootstrap but the lack of community resources on how exactly that would function made it a bit daunting</li></ul>`;
-const $fragment8 = parseFragment`<p${3}>So a few more items in the negative category than the positive category but I am happy with the result and</p>`;
+const $fragment8 = parseFragment`<p${3}>So a few more items in the negative category than the positive category but I am happy with the result.</p>`;
 const stc0 = {
   classMap: {
     "m-auto": true,
@@ -21,7 +21,7 @@ const stc1 = {
   props: {
     "link": "https://github.com/Bobbygllh/personal-website",
     "label": "Github Repo for Website",
-    "picture": ""
+    "picture": "background-image: url(https://bornsql.ca/wp-content/uploads/2022/03/Git-Logo-2Color.png);"
   },
   key: 3
 };
@@ -32,8 +32,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];
-tmpl.stylesheetToken = "lwc-3dbigci4eob";
-tmpl.legacyStylesheetToken = "-lwcOssWebsite_lwcOssWebsite";
+tmpl.stylesheetToken = "lwc-uq7jirsc85";
+tmpl.legacyStylesheetToken = "example-lwcOssWebsite_lwcOssWebsite";
 if (_implicitStylesheets) {
   tmpl.stylesheets.push.apply(tmpl.stylesheets, _implicitStylesheets);
 }

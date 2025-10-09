@@ -51,7 +51,8 @@ const stc0 = {
 const stc1 = {
   props: {
     "link": "https://www.salesforceben.com/12-salesforce-apex-best-practices/",
-    "label": "Good Fundamental Article"
+    "label": "Good Fundamental Article",
+    "picture": "background-image: url(https://www.salesforceben.com/wp-content/uploads/2015/09/screencapture-web-archive-org-web-20140418114539-http-www-salesforceben-com-1443101191417.jpg);"
   },
   key: 5
 };

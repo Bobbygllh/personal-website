@@ -26,7 +26,7 @@
     },
     "example/app|v/0_0_1": {
       "version": "0.0.1",
-      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-Yeq2ppGBDnrADz5OZDQhaMrlpnuV0P-TkBkEAdQ0xxw/bundle_example_app.js",
+      "path": "/1/bundle/amd/l/en-US/bi/0/module/mi/example/app/v/0_0_1/s/sha256-E6LQem9cB36G6T8eDjGfBz7CfevHhcylqv-Uc2tJjlw/bundle_example_app.js",
       "includedModules": [
         "example/lwcBP|v/0_0_1",
         "example/apexBP|v/0_0_1",
@@ -42,7 +42,7 @@
         "lwc|v/8_22_4"
       ],
       "dynamicImports": [],
-      "integrity": "sha256-Yeq2ppGBDnrADz5OZDQhaMrlpnuV0P+TkBkEAdQ0xxw="
+      "integrity": "sha256-E6LQem9cB36G6T8eDjGfBz7CfevHhcylqv+Uc2tJjlw="
     }
   }
 }
